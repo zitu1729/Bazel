@@ -38,3 +38,17 @@ A package is defined as a directory containing a **BUILD** file named either **B
 
 ## To run any test case:
   - bazel test projects/calculator/...  
+
+
+## For my-python-app:
+  - bazel run projects/my-python-app/...  
+  #### or  
+  - bazel run projects/my-python-app:main
+
+  we will see an ip address on CLI (e.g * Running on http://127.0.0.1:5000)
+  press *ctrl + click* jump into web browser. Refresh the page for random inputs.
+
+## To clean bazel cache:
+  - bazel clean --expunge  
+  #### or  
+  - bazel clean --async

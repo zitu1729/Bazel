@@ -1,5 +1,4 @@
-load("@my_deps//:requirements.bzl",  "requirement")
-
+load("@my_deps//:requirements.bzl", "requirement")
 
 
 py_binary(
