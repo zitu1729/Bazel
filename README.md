@@ -12,7 +12,14 @@ The primary unit of code organization in a repository is the package. A package 
 
 A package is defined as a directory containing a **BUILD** file named either **BUILD** or **BUILD.bazel**. A package includes all files in its directory, plus all subdirectories beneath it, except those which themselves contain a **BUILD** file. From this definition, no file or directory may be a part of two different packages.
 
+Note: The BUILD file can be named either **BUILD** or **BUILD.bazel**. If both files exist, **BUILD.bazel** takes precedence over **BUILD**. For simplicity's sake, the documentation refers to these files simply as **BUILD** files.
 
+
+## Installation in Linux machine:
+- wget -c https://github.com/bazelbuild/bazelisk/releases/download/v1.4.0/bazelisk-linux-amd64  
+- chmod +x bazelisk-linux-amd64  
+- sudo mv bazelisk-linux-amd64 /usr/local/bin/bazel  
+- bazel --version  
 
 ## To build every single target: 
   - bazel build //...
